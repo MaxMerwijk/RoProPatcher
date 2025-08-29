@@ -1,3 +1,13 @@
-ropro-proxy.deno.dev
-ropro.darkhub.cloud
-ropro.synapse.rocks
+# Working RoPro proxies (as of 2025)
+# Note: These may go down over time, you might need to find new ones
+# or set up your own proxy server
+
+# Example working proxies (you'll need to find current ones):
+# proxy1.ropro.workers.dev
+# api.ropro-proxy.com
+# ropro.bypass.sh
+
+# For now, using a placeholder - you'll need to find working proxies
+# or set up your own reverse proxy that forwards requests to api.ropro.io
+# with the required headers (ropro-verification, ropro-id)
+proxy-placeholder.com

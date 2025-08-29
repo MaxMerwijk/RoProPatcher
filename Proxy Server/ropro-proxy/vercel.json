@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "src/app/api/[...slug]/route.ts": {
+      "maxDuration": 30
+    },
+    "src/app/api/ropro/[...slug]/route.ts": {
+      "maxDuration": 30
+    }
+  }
+}

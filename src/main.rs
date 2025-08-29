@@ -23,9 +23,9 @@ fn get_proxies() -> Vec<String> {
 
 /// Performs the entire patching process.
 fn patch(path: PathBuf, proxy: String) {
-    // The regex replace thing. We don't want to proxy everything, only the stuff that needs verification
-    let re = regex::Regex::new(r#"(https://api\.)ropro\.io/(validateUser\.php|getServerInfo\.php|getServerConnectionScore\.php|getServerAge\.php|getSubscription\.php)"#).unwrap();
-    let rep = format!("https://{}/${{2}}///api", proxy);
+    // Updated regex to match ALL ropro.io API calls
+    let re = regex::Regex::new(r#"(https://(?:api\.)?ropro\.io/[^"'\s]+)"#).unwrap();
+    let rep = format!("https://{}/${{1}}///api", proxy);
 
     // Patching the background file
     let background = path.join("background.js");

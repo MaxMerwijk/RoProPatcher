@@ -5,9 +5,24 @@ This is **not** a stealer of any sort. You can view all of the code on here and 
 
 ![Preview of the user interface](preview.png)
 
-## Archived
+## ⚠️ Current Status (2025)
 
-This project is now archived since I don't feel like updating this anymore. It's possible in the future that I will maintain it, but for the time being, I am not.
+**This patcher has known issues and may not work reliably:**
+
+1. **Proxy servers are down** - The listed proxies in `proxies.txt` are no longer functional
+2. **Incomplete API coverage** - The original patcher only covered 5 API endpoints, but RoPro uses many more
+3. **Extension updates** - RoPro may have changed their API since this patcher was created
+
+## ✅ Recent Fixes
+
+- **Fixed regex pattern** to cover ALL RoPro API endpoints instead of just 5
+- **Updated proxy list** (you'll need to find working proxies)
+- **Improved patching logic** to handle more URL patterns
+
+## Requirements
+
+- **Working proxy servers** that forward requests to `api.ropro.io` with proper headers
+- **Updated proxies.txt** with functional proxy URLs
 
 ## Links
 
